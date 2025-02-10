@@ -27,3 +27,17 @@ npm run dev
 ```sh
 npm run build
 ```
+
+### Running server
+
+```sh
+node server.js
+```
+
+### Change Socket URL according to network IP in .env
+
+```sh
+.env
+# SOCKET URL
+VITE_SOCKET_URL=http://localhost:3000
+```

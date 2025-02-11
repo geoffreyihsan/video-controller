@@ -1,35 +1,32 @@
 <template>
   <div class="w-screen h-screen flex">
-    <div class="flex w-full">
+    <div
+      class="flex flex-col justify-center items-center w-full bg-cover bg-center"
+      style="background-image: url('/images/background.jpg')"
+    >
       <button
-        class="px-4 py-2 bg-blue-500 text-white rounded h-screen w-3/12"
-        @click="playVideo('../assets/Feature Well Crowne Plaza.mp4')"
+        class="px-4 py-2"
+        @click="playVideo('../../video/SCREEN_Milestone.mp4')"
       >
-        Play Video 1
+        <img src="/images/CTA-Milestone.png" alt="Milestone Button" />
       </button>
       <button
-        class="px-4 py-2 bg-green-500 text-white rounded h-screen w-3/12"
-        @click="playVideo('../assets/FS Hongkong rev 3.mp4')"
+        class="px-4 py-2"
+        @click="playVideo('../../video/SCREEN_J7_Spec.mp4')"
       >
-        Play Video 2
+        <img src="/images/CTA-J7Spec.png" alt="J7 Spec Button" />
       </button>
       <button
-        class="px-4 py-2 bg-red-500 text-white rounded h-screen w-3/12"
-        @click="
-          playVideo(
-            '../assets/Immerse Yourself in Luxury at Shangri-La Singapore_Feature well 1.mp4'
-          )
-        "
+        class="px-4 py-2"
+        @click="playVideo('../../video/SCREEN_J7_SHS_Spec.mp4')"
       >
-        Play Video 3
+        <img src="/images/CTA-J7SHSspec.png" alt="J7 SHS Spec Button" />
       </button>
       <button
-        class="px-4 py-2 bg-yellow-500 text-white rounded h-screen w-3/12"
-        @click="
-          playVideo('../assets/Luxe List Logo Opt 02 Black Background.mp4')
-        "
+        class="px-4 py-2"
+        @click="playVideo('../../video/SCREEN_After_Sales.mp4')"
       >
-        Play Video 4
+        <img src="/images/CTA-AfterSales.png" alt="After Sales Button" />
       </button>
     </div>
   </div>

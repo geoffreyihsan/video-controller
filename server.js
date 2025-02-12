@@ -17,7 +17,11 @@ io.on("connection", (socket) => {
   console.log("User connected:", socket.id);
 
   socket.on("play-video", (videoUrl) => {
-    io.emit("play-on-mac", videoUrl);
+    io.emit("play-on-mac", videoUrl); // Broadcast play-video event
+  });
+
+  socket.on("stop-video", (videoUrl) => {
+    io.emit("stop-on-mac", videoUrl); // Broadcast stop-video event
   });
 
   socket.on("disconnect", () => {
